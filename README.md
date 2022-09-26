@@ -3,7 +3,7 @@ Il s'agit du support pédagogique du module théorie de la décision destiné au
 
 __Chapitre 1:__ [__Introduction__](https://github.com/Hamrita/DT/blob/main/Chap1/Chap1.pdf) 
 
-__Chapitre 2:__  __Décision dans l'incertain__
+__Chapitre 2:__  [__Décision dans l'incertain__](https://github.com/Hamrita/DT/blob/main/Chap2/Chap2.pdf)
 
 __Chapitre 3:__ __Arbre de décision__
 
