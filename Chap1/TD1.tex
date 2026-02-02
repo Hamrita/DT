@@ -1,0 +1,108 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[top=0.5cm, bottom=1.5cm, left=1.75cm, right=1cm]{geometry}
+%\geometry{margin=2cm}
+
+\title{Série d'exercices de Travaux Dirigés 1 \\ Outils d'aide à la décision }
+\author{ IHEC Sousse}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectifs pédagogiques}
+\begin{itemize}
+\item Maîtriser la modélisation d’un problème de décision.
+\item Appliquer le concept de dominance pour réduire l’ensemble des choix.
+\end{itemize}
+
+\section*{Exercice 1 : Formulation d’un problème de décision}
+Un agriculteur doit choisir entre trois types de cultures (blé, maïs, tournesol) pour la saison à venir. Les profits dépendent des conditions climatiques (sècheresse, normale, pluvieuse).
+
+\[
+A = \{a_1: \text{blé}, a_2: \text{maïs}, a_3: \text{tournesol}\}
+\]
+\[
+E = \{e_1: \text{sècheresse}, e_2: \text{normale}, e_3: \text{pluvieuse}\}
+\]
+
+Les profits (en milliers d’euros) sont donnés par la matrice suivante :
+
+\begin{center}
+\begin{tabular}{c|ccc}
+\toprule
+Action / État & $e_1$ & $e_2$ & $e_3$ \\
+\midrule
+$a_1$ & 20 & 60 & 40 \\
+$a_2$ & 30 & 50 & 70 \\
+$a_3$ & 10 & 80 & 30 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Questions :}
+\begin{enumerate}
+\item Écrire l’ensemble $A$ et $E$.
+\item Calculer $c(a_2, e_3)$.
+\end{enumerate}
+
+\vspace{1cm}
+
+\section*{Exercice 2 : Dominance entre actions}
+Soit la matrice de décision suivante :
+
+\begin{center}
+\begin{tabular}{c|ccc}
+\toprule
+Action / État & $e_1$ & $e_2$ & $e_3$ \\
+\midrule
+$a_1$ & 50 & 30 & 40 \\
+$a_2$ & 60 & 20 & 50 \\
+$a_3$ & 40 & 40 & 30 \\
+$a_4$ & 55 & 25 & 45 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Questions :}
+\begin{enumerate}
+\item Vérifier si $a_2$ domine $a_1$.
+\item Vérifier si $a_4$ domine $a_2$.
+\item Déterminer l’ensemble des actions efficaces $A^*$.
+\end{enumerate}
+
+\newpage
+\vspace*{1cm}
+
+\section*{Exercice 3 : Application de la dominance}
+Un investisseur hésite entre quatre projets d’investissement (P1, P2, P3, P4). Les gains dépendent de l’évolution du marché (hausse, stabilité, baisse).
+
+Matrice des gains (en k€) :
+
+\begin{center}
+\begin{tabular}{c|ccc}
+\toprule
+Projet / Marché & Hausse & Stabilité & Baisse \\
+\midrule
+P1 & 100 & 60 & 20 \\
+P2 & 80 & 70 & 40 \\
+P3 & 90 & 50 & 30 \\
+P4 & 70 & 80 & 50 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Questions :}
+\begin{enumerate}
+\item Y a-t-il une action qui domine strictement une autre ? Justifier.
+\item Déterminer $A^*$.
+\item Si on retire P4, l’ensemble des actions efficaces change-t-il ?
+\end{enumerate}
+
+
+\end{document}
