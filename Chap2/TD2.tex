@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage[top=1.5cm, left=2cm, right=1.5cm, bottom=1.75cm]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+
+
+
+\title{Série d'exercices des travaux dirigés 2\\ Outils d'aide à la décision}
+\author{IHEC Sousse - L3: Management}
+\date{2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objectifs pédagogiques}
+\begin{itemize}
+\item Maîtriser la formulation de problèmes réels en programmation linéaire
+\item Transformer entre formes canonique et standard
+\item Résoudre graphiquement des PL à deux variables
+\item Interpréter économiquement les solutions optimales
+\item Reconnaître les différents types de contraintes en économie
+\end{itemize}
+
+\section*{Exercice 1 : Optimisation de production}
+
+Une usine fabrique deux types de composants électroniques : A et B. Chaque composant nécessite du temps de fabrication sur deux machines différentes :
+\begin{itemize}
+\item Composant A : 2 heures sur Machine 1 et 1 heure sur Machine 2
+\item Composant B : 1 heure sur Machine 1 et 3 heures sur Machine 2
+\end{itemize}
+Les disponibilités sont : 
+\begin{itemize}
+\item Machine 1 : 100 heures/semaine
+\item Machine 2 : 90 heures/semaine
+\end{itemize}
+
+Les profits unitaires sont : 30€ pour A et 50€ pour B.
+
+\begin{enumerate}
+\item Formuler le programme linéaire qui maximise le profit.
+\item Mettre sous forme canonique.
+\item Mettre sous forme standard avec variables d'écart.
+\item Représenter graphiquement la région réalisable.
+\item Déterminer la solution optimale graphiquement.
+\end{enumerate}
+
+\section*{Exercice 2 : Planification de régime alimentaire}
+
+Une clinique souhaite minimiser le coût d'un régime alimentaire tout en respectant des contraintes nutritionnelles. Deux aliments sont disponibles :
+\begin{itemize}
+\item Aliment X : 2€/kg, contient 3 unités de protéines et 1 unité de vitamines par kg
+\item Aliment Y : 3€/kg, contient 1 unité de protéines et 2 unités de vitamines par kg
+\end{itemize}
+
+Les besoins minimums sont : 
+\begin{itemize}
+\item 9 unités de protéines par jour
+\item 8 unités de vitamines par jour
+\end{itemize}
+
+\begin{enumerate}
+\item Formuler le programme linéaire de minimisation.
+\item Transformer en problème de maximisation équivalent.
+\item Représenter la région réalisable.
+\item Trouver la solution optimale graphiquement.
+\item Calculer le coût minimum quotidien.
+\end{enumerate}
+
+\section*{Exercice 3 : Allocation de budget marketing}
+
+Une entreprise dispose d'un budget de 50 000€ pour la publicité sur deux supports :
+\begin{itemize}
+\item Radio : coût 1000€ par spot, touche 10 000 personnes
+\item TV : coût 5000€ par spot, touche 50 000 personnes
+\end{itemize}
+
+Contraintes : 
+\begin{itemize}
+\item Maximum 30 spots radio
+\item Maximum 10 spots TV
+\item Au moins 300 000 personnes doivent être touchées
+\end{itemize}
+
+L'objectif est de minimiser le coût total.
+
+\begin{enumerate}
+\item Définir les variables de décision.
+\item Formuler le programme linéaire.
+\item Mettre sous forme canonique.
+\item Représenter graphiquement.
+\item Déterminer la stratégie optimale.
+\end{enumerate}
+
+\section*{Exercice 4 : Problème de transport}
+
+Une entreprise a deux usines (U1 et U2) et trois centres de distribution (C1, C2, C3).
+\begin{itemize}
+\item Capacités de production : U1 = 100 unités, U2 = 150 unités
+\item Demandes : C1 = 80 unités, C2 = 120 unités, C3 = 50 unités
+\item Coûts de transport (€/unité) :
+\end{itemize}
+\begin{center}
+\begin{tabular}{c|ccc}
+\toprule
+& C1 & C2 & C3 \\
+\midrule
+U1 & 4 & 6 & 8 \\
+U2 & 6 & 4 & 7 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item Formuler le programme linéaire pour minimiser les coûts de transport.
+\item Identifier le nombre de variables et de contraintes.
+\item Expliquer pourquoi ce problème nécessite des contraintes d'égalité.
+\item Mettre sous forme standard.
+\item Analyser graphiquement un sous-problème simplifié à 2 usines et 2 centres.
+\end{enumerate}
+\section*{Exercice 5 : Gestion de portefeuille d'investissement}
+Un investisseur dispose de 100 000€ à répartir entre trois types d'actifs :
+\begin{itemize}
+\item Actions A : rendement 8\%, risque élevé (coefficient 3)
+\item Obligations B : rendement 5\%, risque moyen (coefficient 2)
+\item Placements C : rendement 3\%, risque faible (coefficient 1)
+\end{itemize}
+
+Contraintes :
+\begin{itemize}
+\item Maximum 40\% en actions A
+\item Minimum 20\% en placements C
+\item Le risque total moyen ne doit pas dépasser 2 (calculé comme moyenne pondérée des coefficients)
+\end{itemize}
+
+Objectif : Maximiser le rendement total.
+
+\begin{enumerate}
+\item Formuler le programme linéaire.
+\item Expliquer l'hypothèse de divisibilité dans ce contexte.
+\item Mettre sous forme canonique.
+\item Représenter graphiquement pour deux variables (en fixant la troisième).
+\item Interpréter économiquement la solution optimale.
+\end{enumerate}
+
+
+\end{document}
