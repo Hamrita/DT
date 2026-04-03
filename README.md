@@ -7,6 +7,6 @@ __Chapitre 2:__  [__La programmation linéaire__](https://github.com/Hamrita/DT/
 
 __Chapitre 3:__ [__Décision dans l'incertain__](https://github.com/Hamrita/DT/blob/main/Chap3/Chap3.pdf)
 
-__Chapitre 4:__ [__Décision dans le risque__]()
+__Chapitre 4:__ [__Décision dans le risque__](https://github.com/Hamrita/DT/blob/main/Chap4/Chap4.pdf)
 
 __Chapitre 5:__ __L'arbre de décision__
